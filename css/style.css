@@ -1,0 +1,418 @@
+body{
+    background-color:cornsilk;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#Welcome{
+    border: 1px solid rgba(153, 113, 47, 0.812);
+    background-image: url("../alliances-invitation.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: top;
+    position: relative;
+    background-size: cover;
+    width: 75%;
+    max-width: 600px;
+    height: 350px;
+    margin: auto;
+    margin-top: 48px;
+}
+.text1{
+font-size: clamp(32px, 5vw, 64px);
+color :rgba(26, 16, 2, 0.812);
+margin-bottom: 250px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text2{
+font-size: clamp(12px, 5vw, 24px);
+color:rgba(153, 113, 47, 0.812);
+font-family: Arial, Helvetica, sans-serif;
+}
+#Invitation{
+    text-align: center;
+    margin:auto;
+    width: 75%;
+}
+.text3{
+     font-family: Arial, sans-serif;
+    color: rgba(153, 113, 47, 0.812);
+    font-size: clamp(12px, 2vw, 24px);
+    letter-spacing: 4px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding:32px;
+}
+.text4{
+font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(48px, 8vw, 96px);
+    letter-spacing: 12px;
+    color: rgba(29, 19, 3, 0.812);
+}
+.text5{
+font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(32px, 4vw, 64px);
+    color: rgba(153, 113, 47, 0.812);
+}
+.text6{
+font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(48px, 8vw, 96px);
+    letter-spacing: 12px;
+    color: rgba(29, 19, 3, 0.812);
+}
+.divider{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.line{
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(153, 113, 47, 0.812), transparent);
+}
+.heart{
+    font-size: 24px;
+    color: rgba(153, 113, 47, 0.812);
+    flex-shrink: 0;
+}
+.text7{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: rgba(29, 19, 3, 0.812);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.text8{
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    font-style: oblique;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: rgba(26, 16, 2, 0.812);
+    margin-bottom: 24px;
+}
+.box{
+    border: 1px solid rgba(153, 113, 47, 0.812);
+    background-color: cornsilk;
+    width: 30%;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(153, 113, 47, 0.812);
+}
+.date{
+    margin-top: 16px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: rgba(29, 19, 3, 0.812);
+}
+hr{
+    width: 15%;
+    border-color: rgba(153, 113, 47, 0.812);
+}
+.heure{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: rgba(29, 19, 3, 0.812);
+}
+.lieu{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: rgba(153, 113, 47, 0.812);
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+#compte_à_rebours{
+    text-align: center;
+    margin: auto;
+    max-width: 360px;
+    background: rgba(153, 113, 47, 0.812);
+    border: 1px solid rgba(153, 113, 47, 0.812);
+    border-radius: 20px;
+    margin-top: 32px;
+    padding: 16px;
+    color: cornsilk;
+    box-shadow: 0 4px 8px rgba(153, 113, 47, 0.812);
+}
+.text9{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#countdown{
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+.time{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.time span{
+    font-family: 'Jost', 'Trebuchet MS' ,'sans-serif';
+    font-size: clamp(16px, 2vw, 24px);
+    font-weight: 200;
+    color: cornsilk;
+    line-height: 1;
+    display: block;
+}
+.time-label{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: cornsilk;
+    margin-top: 4px;
+}
+#programme{
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    margin-top: 24px;
+    padding: 16px;
+}
+.text10{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: rgba(153, 113, 47, 0.812);
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+}
+.programme-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;    
+    border-bottom: 2px solid rgba(153, 113, 47, 0.812);
+}
+.time{
+    font-family: 'Jost', 'Trebuchet MS' ,'sans-serif';
+    font-size: clamp(16px, 2vw, 24px);
+    font-weight: 200;
+    color: rgba(29, 19, 3, 0.812);
+    line-height: 1;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+.activity{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(153, 113, 47, 0.812);
+    text-align: center;
+    width: 100%;
+    margin-top: 8px;
+}
+.description{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: rgba(26, 16, 2, 0.812);
+    text-align: center;
+    width: 100%;
+    margin-top: 4px;
+}
+#information{
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    margin-top: 24px;
+    padding: 16px;
+}
+.text12{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: rgba(153, 113, 47, 0.812);
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+}
+.dress-code{
+    border: 1px solid rgba(153, 113, 47, 0.812);
+    background-color: cornsilk;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 8px rgba(153, 113, 47, 0.812);
+    text-align: center;
+}
+.localisation{
+    border: 1px solid rgba(153, 113, 47, 0.812);
+    background-color: cornsilk;
+    border-radius: 8px;
+    padding: 16px;
+    width: 50%;
+    margin-top: 24px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(153, 113, 47, 0.812);
+    text-align: center;
+}
+img{
+    max-width: 100%;
+    height: 180px;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+.info{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: rgba(26, 16, 2, 0.812);
+    text-align: center;
+    width: 100%;
+    margin-top: 4px;
+}
+.info{
+    font-style: oblique;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(26, 16, 2, 0.812);
+}
+h3{
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgba(153, 113, 47, 0.812);
+    margin-bottom: 8px;
+}
+#confirmation{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(153, 113, 47, 0.812);
+    border: 1px dashed rgba(153, 113, 47, 0.812);
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    margin-top: 24px;
+    padding: 16px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+.text13{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: rgba(29, 19, 3, 0.812);
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+}
+input{
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 2px solid rgba(153, 113, 47, 0.812);
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: cornsilk;
+    color: rgba(29, 19, 3, 0.812);
+}
+button{
+    background-color: cornsilk;
+    color: rgba(29, 19, 3, 0.812);
+    border: 2px solid rgba(153, 113, 47, 0.812);
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 12px 24px;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: gainsboro;
+}
+button:active{
+    background-color: rgba(153, 113, 47, 0.812);
+}
+#footer{
+    border: 1px solid rgba(153, 113, 47, 0.812);
+    background-color: rgba(29, 19, 3, 0.812);
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    margin-top: 24px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+.text14{
+    margin-top: 32px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: rgba(26, 16, 2, 0.812);
+    text-align: center;
+}
+.Heart{
+    font-size: 32px;
+    color:cornsilk;
+    flex-shrink: 0;
+    text-shadow: 0 0 5px rgba(153, 113, 47, 0.812), 0 0 10px rgba(153, 113, 47, 0.812), 0 0 20px rgba(153, 113, 47, 0.812);
+}
+.fleur{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 32px;
+    color: rgba(153, 113, 47, 0.812);
+    margin-top: 16px;
+    text-shadow: 0 0 5px rgba(153, 113, 47, 0.812), 0 0 10px rgba(153, 113, 47, 0.812), 0 0 20px rgba(153, 113, 47, 0.812);
+}
+#canvas{
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.confirmation, .decline {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: serif;
+}
+
+.confirmation {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-style: oblique;
+    color: rgba(26, 16, 2, 0.812);
+}
+
+.decline {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-style: oblique;
+    color: rgba(26, 16, 2, 0.812);
+}
+footer p{
+    text-align: center;
+    margin-top: 24px;
+    padding: 16px;
+    font-size: 18px;
+    color: rgba(29, 19, 3, 0.812);
+}
+footer a{
+    font-size: 18px;
+    color: rgba(29, 19, 3, 0.812);
+    text-decoration: none;
+}

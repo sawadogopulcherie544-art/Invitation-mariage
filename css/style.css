@@ -389,6 +389,7 @@ button:active{
     border-radius: 5px;
     text-align: center;
     font-family: serif;
+    text-decoration: none;
 }
 
 .confirmation {
